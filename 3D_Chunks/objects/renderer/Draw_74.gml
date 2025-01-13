@@ -1,0 +1,1 @@
+draw_surface_stretched(surface, x,y,width,height)
