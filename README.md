@@ -14,7 +14,7 @@ A system I designed in Gamemaker, made to render larger map with camera view cul
 
 ### Con:
 
-- Not performance free (depend on the map size and level of subdivide, performance cost can increase exponentially)
+- Not performance free (depend on the map size, not enough subdivide can increase performance cost exponentially)
 - Memory cost can increase exponentially due to having multiple model
 - All model are expected to have the same texture, using a texture atlas is recommended
 - Model are static, but can be transformed via vertex shader
