@@ -1,5 +1,7 @@
 # Gamemaker 3D Chunk
 
+> This repo also contain [Frustum culling script](https://github.com/callmeEthan/Gamemaker_frustum_culling)
+
 A system I designed in Gamemaker, made to render larger map with camera view culling. It has multiple function:
 
 - World map are devided into chunks. Each chunk are also subdivided into smaller chunk (You can set the level of subdivide, default is 3, minimum is 1 for no subdivide at all).  
@@ -14,7 +16,7 @@ A system I designed in Gamemaker, made to render larger map with camera view cul
 
 ### Con:
 
-- Not performance free (depend on the map size and level of subdivide, performance cost can increase exponentially)
+- Not performance free (depend on the map size, not enough subdivide can increase performance cost exponentially)
 - Memory cost can increase exponentially due to having multiple model
 - All model are expected to have the same texture, using a texture atlas is recommended
 - Model are static, but can be transformed via vertex shader
