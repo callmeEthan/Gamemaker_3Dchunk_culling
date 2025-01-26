@@ -287,18 +287,12 @@ function chunk_render(chunk, radius, texture=-1)
 	// Frustum check on lowest lod
 	for(var j=yfrom; j<yto; j++)
 	{
-		var x0=-1, x1=-1
-		for(var i=xfrom; i<xto; i++)
-		{
-			if x0<0
-			{
-				if frustum_intersectsBox(i*scale, j*scale, chunk.zmin, (i+1)*scale, (j+1)*scale, chunk.zmax) {x0=i;}
-			} else if x1<0 {
-				if !frustum_intersectsBox(i*scale, j*scale, chunk.zmin, (i+1)*scale, (j+1)*scale, chunk.zmax) {x1=i; break}
-			}
-		}
-		if x0<0 continue;
-		if x1<0 x1=xto;
-		render(chunk, x0, i, j, scale, 0, chunk.subdivide, _x, _y, _z, lod_dist, render)
+		debug_overlay(0,j)
+		if !frustum_intersectsBox(xfrom, j*scale, chunk.zmin, xto*scale, (j+1)*scale, chunk.zmax) continue;
+		var x1 = xfrom, x2 = xto;
+		for(var i=x1; i<x2; i++) if !frustum_intersectsBox(i*scale, j*scale, chunk.zmin, (i+1)*scale, (j+1)*scale, chunk.zmax) x1++ else break;
+		for(var i=x2-1; i>x1; i--) if !frustum_intersectsBox(i*scale, j*scale, chunk.zmin, (i+1)*scale, (j+1)*scale, chunk.zmax) x2-- else break;
+		if x1>=x2 continue;
+		render(chunk, x1, x2, j, scale, 0, chunk.subdivide, _x, _y, _z, lod_dist, render)
 	}
 }

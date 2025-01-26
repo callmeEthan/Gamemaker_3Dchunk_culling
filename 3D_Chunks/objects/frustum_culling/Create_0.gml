@@ -22,4 +22,4 @@ for(var j = 50; j<=4000; j+=50)
 }
 chunk.update_queue()
 global.debug=false
-show_debug_overlay(true, false)
+show_debug_overlay(false, false)
