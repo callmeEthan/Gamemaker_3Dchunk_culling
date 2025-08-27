@@ -245,7 +245,7 @@ function chunk_render(chunk, radius, texture=-1)
 		static draw = function(chunk, x1, x2, y, scale, lod, texture)
 		{
 			lod=(chunk.subdivide-lod)-1
-			chunk.render(x1, x2, y, lod, -1)
+			chunk.render(x1, x2, y, lod, texture)
 		}
 		
 		var radius = lod_dist[lod];
