@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"3D_Chunks",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -26,13 +26,14 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Sphere.obj","CopyToMask":-1,"filePath":"datafiles","name":"Sphere.obj","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"3D_Chunks",
   "resources":[
@@ -44,6 +45,7 @@
     {"id":{"name":"basic_func","path":"scripts/basic_func/basic_func.yy",},},
     {"id":{"name":"chunk_vbuffer","path":"scripts/chunk_vbuffer/chunk_vbuffer.yy",},},
     {"id":{"name":"draw_func","path":"scripts/draw_func/draw_func.yy",},},
+    {"id":{"name":"Quaternion_func","path":"scripts/Quaternion_func/Quaternion_func.yy",},},
     {"id":{"name":"view_frustum","path":"scripts/view_frustum/view_frustum.yy",},},
     {"id":{"name":"sh_debugging","path":"shaders/sh_debugging/sh_debugging.yy",},},
     {"id":{"name":"sh_lighting","path":"shaders/sh_lighting/sh_lighting.yy",},},

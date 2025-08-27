@@ -21,6 +21,7 @@
     {"name":"renderer","order":1,"path":"objects/renderer/renderer.yy",},
     {"name":"chunk_vbuffer","order":3,"path":"scripts/chunk_vbuffer/chunk_vbuffer.yy",},
     {"name":"draw_func","order":1,"path":"scripts/draw_func/draw_func.yy",},
+    {"name":"Quaternion_func","order":4,"path":"scripts/Quaternion_func/Quaternion_func.yy",},
     {"name":"view_frustum","order":2,"path":"scripts/view_frustum/view_frustum.yy",},
     {"name":"sh_debugging","order":1,"path":"shaders/sh_debugging/sh_debugging.yy",},
     {"name":"spr_color_2","order":1,"path":"sprites/spr_color_2/spr_color_2.yy",},

@@ -16,7 +16,7 @@ camDist = 10
 camTimer = 0;
 viewMat = array_create(16);
 projMat = array_create(16);
-fov = 60;	zoom = 1;	camUp = [0,0,1];
+fov = 50;	zoom = 1;	camUp = [0,0,1];
 xFrom = camDist * dcos(xyAngle) * dcos(zAngle);
 yFrom = camDist * dsin(xyAngle) * dcos(zAngle);
 zFrom = camDist * dsin(zAngle);

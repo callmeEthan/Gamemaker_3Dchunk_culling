@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Quaternion_func",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Quaternion_func",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

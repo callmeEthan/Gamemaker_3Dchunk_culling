@@ -23,3 +23,9 @@ for(var j = 50; j<=4000; j+=50)
 chunk.update_queue()
 global.debug=false
 show_debug_overlay(false, false)
+var w=16, h=20;
+var i = w*3 + 6;
+log("[6,3] = "+string(i))
+var _x = i mod w;
+var _y = floor(i/w);
+log(string([_x,_y]))

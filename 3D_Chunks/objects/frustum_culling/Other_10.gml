@@ -26,7 +26,9 @@ global.count = 0;
 
 if lod==-1
 {
-	chunk_render(chunk, 10000, renderer.viewMat, renderer.projMat)
+	//chunk_render(chunk, 10000, renderer.viewMat, renderer.projMat)
+	if keyboard_check(vk_tab) chunk_render_area(chunk, 1)//chunk_render_impostor(chunk, 2000, 1000)
+	else chunk_render(chunk, 1000, -1)
 	/*
 	var scale = chunk.scale*4;
 	var xx = (floor(renderer.xFrom/scale)*scale)/scale;
